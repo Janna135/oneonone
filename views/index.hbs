@@ -1,0 +1,72 @@
+<header data-header-module>
+  <img src="/images/1on1s.png" class="logo">
+  <button class="notes menu__dropdown">
+    Notizen
+  </button>
+  <button class="makedate menu__dropdown">
+    Termin
+  </button>
+  <button class="abstract menu__dropdown">
+    Übersicht
+  </button>
+
+</header>
+
+<main>
+  <div class="page page1 hidden">
+    <div class="headline">
+      Nächste Termine
+    </div>
+    <div class="placeholder__dates">
+    </div>
+  </div>
+
+  <div class="page page2 hidden">
+    <div class="headline">
+      Notizen
+    </div>
+    <div class="button note">
+      Neue Notiz
+    </div>
+    <div class="hidden note__form">
+      <input type="text" placeholder="Überschrift" class="note__form--input">
+      <input type="text" placeholder="Notiz" class="note__form--input">
+      <button class="note__form--button savenote">Notiz speichern</button>
+    </div>
+    <div class="placeholder__notes"></div>
+  </div>
+
+  <div class="page page3 hidden">
+    <div class="headline">
+      Neuer Termin
+    </div>
+    <div class="button" data-date-btn>
+      Neuer Termin
+    </div>
+    <div class="newdate hidden">
+      <p class="date__headline">Name</p>
+      <input type="text" class="datename">
+      <p class="date__headline">Datum</p>
+      <input type="date" class="datedate">
+      <p class="date__headline">Uhrzeit</p>
+      <input type="time" class="datetime">
+      <button class="button savedate note__form--button">Termin speichern</button>
+    </div>
+    <div class="hidden main__items date__message">Dein Termin wird auf der Startseite angezeigt.</div>
+  </div>
+
+  <div class="page page4 hidden">
+    <div class="headline">
+      Übersicht
+    </div>
+    <div class="button student">
+      Neuer Student
+    </div>
+    <div class="newstudent hidden">
+      <p class="date__headline">Name</p>
+      <input type="text" placeholder="Name" class="studentname">
+      <div class="button savestudent note__form--button">Student speichern</div>
+    </div>
+    <div class="placeholder__student"></div>
+  </div>
+</main>

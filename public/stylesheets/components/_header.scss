@@ -1,0 +1,80 @@
+$pink: rgba(143, 36, 150, 1);
+$menu: rgba(103, 68, 107, 1);
+$darkblue: rgba(49, 56, 93, 1);
+$greyblue: rgba(129, 135, 173, 0.7);
+$white: #ffffff;
+
+header {
+  height: 125px;
+  background-color: rgba(143, 36, 150, 1);
+  position: relative;
+}
+
+.headline {
+  background-color: $pink;
+  color: white;
+  font-weight: lighter;
+  font-size: 2rem;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 10px;
+}
+
+.logo {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+
+.menu {
+  background-color: rgba(143, 36, 150, 1);
+  border: 1px solid #ffffff;
+  border-radius: 5px;
+  color: #ffffff;
+  font-weight: bold;
+  height: 30px;
+  width: 30px;
+
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}
+
+.menu::selection {
+  background-color: white;
+  color: rgba(143, 36, 150, 1);
+}
+
+.menu__dropdown {
+  border: 1px solid white;
+  border-radius: 5px;
+  background-color: $menu;
+  color: $white;
+  padding: 5px;
+  position: absolute;
+  top: 28px;
+  right: 0px;
+
+  position: absolute;
+  right: 15px;
+}
+
+.menu__dropdown:hover {
+  background-color: $greyblue;
+}
+
+a:hover {
+  background: $greyblue;
+}
+
+.notes {
+  top: 15px;
+}
+
+.makedate {
+  top: 50px;
+}
+
+.abstract {
+  top: 85px;
+}

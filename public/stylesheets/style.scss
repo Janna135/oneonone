@@ -1,0 +1,164 @@
+@import "base";
+@import "utils";
+
+// add more components like header here
+@import "components/header";
+
+$pink: rgba(143, 36, 150, 1);
+$menu: rgba(103, 68, 107, 1);
+$darkblue: rgba(49, 56, 93, 1);
+$greyblue: rgba(129, 135, 173, 0.7);
+$white: #ffffff;
+
+main {
+  background-color: $darkblue;
+  height: 100vh;
+  overflow-x: scroll;
+}
+
+a {
+  color: $white;
+  text-decoration: none;
+}
+
+input[type="text"] {
+  border-radius: 5px;
+  background-color: $greyblue;
+  color: $white;
+  border: 1px solid $greyblue;
+  font-size: 1.2rem;
+}
+
+input[type="text"]:focus {
+  border: 2px solid $pink;
+  box-sizing: border-box;
+}
+
+input[type="text"]::placeholder {
+  color: $white;
+}
+
+input[input="time"] {
+  border-radius: 5px;
+  background-color: $greyblue;
+  color: $white;
+  border: 1px solid $greyblue;
+  font-size: 1.2rem;
+}
+
+input[input="date"] {
+  border-radius: 5px;
+  background-color: $greyblue;
+  color: $white;
+  border: 1px solid $greyblue;
+  font-size: 1.2rem;
+}
+
+.hidden {
+  display: none;
+}
+
+.button {
+  background-color: $darkblue;
+  border: 1px solid white;
+  border-radius: 5px;
+  color: white;
+  padding: 5px;
+  margin: 10px 10px 0 10px;
+  font-size: 1.5rem;
+}
+
+.main__items {
+  background-color: $greyblue;
+  border-radius: 10px;
+  color: $white;
+  height: 50px;
+  margin: 10px 10px 0 10px;
+  padding: 10px;
+  width: auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.main__items::selection {
+  background-color: $greyblue;
+}
+
+/*page 2*/
+.note__form {
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+  background-color: $darkblue;
+}
+
+.note__form--input {
+  font-size: 1.5rem;
+}
+
+.note__form--button {
+  background-color: $pink;
+  border-radius: 5px;
+  color: $white;
+  font-size: 1.2rem;
+  height: 50px;
+  margin-top: 10px;
+  width: auto;
+}
+
+.note__items {
+  background-color: $greyblue;
+  border-radius: 10px;
+  color: $white;
+  margin: 10px 10px 0 10px;
+  padding: 10px;
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  list-style: none;
+}
+
+.note__headline {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+/*page 3*/
+.date {
+  color: $white;
+  height: 50px;
+  width: 100px;
+  position: absolute;
+  top: 45px;
+  right: 100px;
+}
+
+.newdate {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.date__headline {
+  color: white;
+  font-size: 1.5rem;
+  font-weight: lighter;
+}
+
+/*page 4*/
+.newstudent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.studentname {
+  font-size: 1.3rem;
+  margin-bottom: 5px;
+}
