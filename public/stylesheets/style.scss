@@ -126,6 +126,14 @@ input[input="date"] {
 }
 
 /*page 3*/
+select {
+  background-color: $greyblue;
+  border: 1px solid $white;
+  color: white;
+  font-size: 1.5rem;
+  width: 200px;
+}
+
 .date {
   color: $white;
   height: 50px;

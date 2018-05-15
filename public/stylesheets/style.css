@@ -167,6 +167,13 @@ input[input="date"] {
   margin-bottom: 5px; }
 
 /*page 3*/
+select {
+  background-color: rgba(129, 135, 173, 0.7);
+  border: 1px solid #ffffff;
+  color: white;
+  font-size: 1.5rem;
+  width: 200px; }
+
 .date {
   color: #ffffff;
   height: 50px;

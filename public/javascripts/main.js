@@ -141,9 +141,11 @@ class Student {
     this.button = document.querySelector(".savestudent");
     this.students = loadData("students") || [];
     this.students.forEach(student => this.createStudent(student.name));
+    this.students.forEach(student => this.createSelection(student.name));
 
     this.button.addEventListener("click", event => {
       this.createStudent(nameEl.value);
+      this.createSelection(nameEl.value);
       saveData("students", this.students);
       nameEl.value = "";
     });
@@ -156,6 +158,11 @@ class Student {
 
     studentBtn.classList.remove("hidden");
     studentForm.classList.add("hidden");
+  }
+  createSelection(name) {
+    const studentsPlaceholder = document.querySelector(".placeholderstudents");
+    const selectString = `<option>${name}</option>`;
+    studentsPlaceholder.insertAdjacentHTML("afterbegin", selectString);
   }
 }
 
